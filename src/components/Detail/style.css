@@ -1,0 +1,29 @@
+.content-image{
+    width: 300px;
+
+    @media(width < 768px){
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.btn-back-home{
+background-color: #ad986f;
+  color: #f9f9f9;
+  border-radius: 0.5rem;
+  padding: 5px;
+  width: 7vw;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover{
+    background-color: #ad986f;
+    color: #000000;
+  }
+
+  @media (max-width: 768px) {
+    width: 35%;
+  }
+}
