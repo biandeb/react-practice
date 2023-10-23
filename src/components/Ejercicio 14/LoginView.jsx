@@ -13,7 +13,7 @@ const LoginView = () => {
         <div className='col-12 col-md-6'>
           <img
             src='https://i.postimg.cc/tgRz5YRm/la-cocinita-de-Eze.jpg'
-            alt='La cocinita de Ezequielito'
+            alt='La cocinita de Ezequielito Amin'
             className='w-75 rounded'
           />
         </div>
