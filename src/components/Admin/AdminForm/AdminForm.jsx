@@ -90,9 +90,20 @@ const {mutate: putBlog} = useMutation({
         postBlog(data);
       }
   };
+
+  const handleCancelEdition = () => {
+    reset();
+
+    // Limpiar estado global
+    clearBlog();
+  }
   
   // Render
-    return <form className='card p-3 w-50 container' onSubmit={onSubmitRHF(handleSubmit)} noValidate>
+    return (
+        <>
+        {isEditing && <div className='container alert alert-info w-50'>You are editing the blog &quot;<span className='fw-bold'>{blog.title}</span>&quot;
+        </div>}
+        <form className='card p-3 w-50 container' onSubmit={onSubmitRHF(handleSubmit)} noValidate>
         <Input 
         register={register}
         options={{
@@ -155,10 +166,20 @@ const {mutate: putBlog} = useMutation({
         />
         <p className='text-danger'>{errors.content?.message}</p>
 
-        <div className='text-end'>
-        <button type='submit' className='btn-save mt-3'>Save</button>
+        <div className='text-end mt-3'>
+        <button type='submit' className='btn-save'>Save</button>
+        {isEditing && (
+        <button 
+        type='button' 
+        className='btn-cancel-edit ms-2' 
+        onClick={handleCancelEdition}>
+        Cancel edit
+        </button>
+        )}
         </div>
     </form>
+    </>
+    )
 };
 
 export default AdminForm;

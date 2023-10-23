@@ -2,8 +2,8 @@ import LoginForm from "../Login/LoginForm";
 
 const LoginView = () => {
   return (
-    <section className="container mb-4">
-    <h1 className="text-center text-light mt-5 fw-bold">Welcome</h1>
+    <section className="container mb-4 text-center">
+    <h1 className="text-light mt-5 fw-bold">Welcome</h1>
     <hr className="text-light" />
     <div className='bg-light rounded p-4 '>
       <article className='row'>
@@ -14,7 +14,7 @@ const LoginView = () => {
           <img
             src='https://i.postimg.cc/tgRz5YRm/la-cocinita-de-Eze.jpg'
             alt='La cocinita de Ezequielito'
-            className='w-100 rounded'
+            className='w-75 rounded'
           />
         </div>
       </article>

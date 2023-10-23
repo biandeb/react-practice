@@ -3,14 +3,14 @@
 }
 
 .btn-save{
-    background-color: #5cd6a3;
+    background-color: #3f3f3f;
     color: #f9f9f9;
     border-radius: 0.5rem;
     padding: 5px;
     width: 4vw;
   
   &:hover{
-    background-color: #3d916e;
+    background-color: #707070;
     color: #000000;
   }
 
@@ -117,5 +117,22 @@ object-fit: cover;
 
 @media (max-width: 768px) {
   width: 25%;
+}
+}
+
+.btn-cancel-edit{
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.5rem;
+  padding: 5px;
+  width: 6vw;
+
+&:hover{
+  background-color: #e4e1e1;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  width: 40%;
 }
 }
